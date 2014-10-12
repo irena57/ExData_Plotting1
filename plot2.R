@@ -24,7 +24,7 @@
 	consumption_data$DT<-strptime(consumption_data$DT, "%Y-%m-%d %H:%M:%S") # converts to Time class
 
 # Converting rest columns from "character" to "numeric"
-	for(i in 3:9) consumption_data[,i]<-as.numeric(consumption_data[,i])# missing values "?" coerce to NA
+	for(i in 3:9) consumption_data[,i]<-as.numeric(consumption_data[,i])  # missing values "?" coerce to NA
 	
 
 #####################################################################
@@ -46,7 +46,7 @@
 # Plot construction and launching it into .png file 480 pixels by 480 pixels
 png(filename = "plot2.png",width = 480, height = 480, units = "px")
 	par(pin=c(4.0,3.5))   				                         # plot size in inches - global parameter
-	plot(x,y,type="n",xlab=" ",ylab="Global Active Power (kilowatts)") # just setup for the plot
-	lines(x,y)					                               # plotting y vs x with lines
+	plot(x,y,type="n",xlab=" ",ylab="Global Active Power (kilowatts)")       # just setup for the plot
+	lines(x,y)					                         # plotting y vs x with lines
 dev.off()
 
