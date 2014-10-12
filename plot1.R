@@ -9,7 +9,7 @@
 
 #####################################################################
 # Conversion of the Date variable to Date class in R
-	consumption_data$Date <- strptime(consumption_data$Date,"%d/%m/%Y") # converts to Data class
+	consumption_data$Date <- strptime(consumption_data$Date,"%d/%m/%Y") # converts to Date class
 	consumption_data$Date <- as.Date(consumption_data$Date)             # removes PST from format
 	
 # Converting rest columns from "character" to "numeric"
