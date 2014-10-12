@@ -57,7 +57,7 @@
 # Plot construction and launching it into .png file 480 pixels by 480 pixels
 	png(filename = "plot3.png",width = 480, height = 480, units = "px")
 	   par(pin=c(4.0,3.5))							# plot size in inches - global parameter
-	   plot(x,y1,type="n",xlab=" ",ylab="Energy sub metering")	# just setup for the plot
+	   plot(x,y1,type="n",xlab=" ",ylab="Energy sub metering")	        # just setup for the plot
 	   lines(x,y1,col="black")						# plotting y1
 	   lines(x,y2,col="red")						# plotting y2
 	   lines(x,y3,col="blue")						# plotting y3
