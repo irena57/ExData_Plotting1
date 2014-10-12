@@ -21,7 +21,7 @@
 
 #####################################################################
 # Conversion of the Date and Time variables to Date/Time classes in R
-	consumption_data$Date <- strptime(consumption_data$Date,"%d/%m/%Y") # converts to Data class
+	consumption_data$Date <- strptime(consumption_data$Date,"%d/%m/%Y") # converts to Date class
 	consumption_data$Date <- as.Date(consumption_data$Date)             # removes PST from format
 	date <- consumption_data$Date
 	time <- consumption_data$Time
